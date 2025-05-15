@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 """
 UTF-8 Validation
 This script validates if a given string is a valid UTF-8 encoded string.
@@ -26,5 +26,5 @@ def validUTF8(data):
             if i >> 6 != 0b10:
                 return False
             byte_count -= 1
-    
+
     return byte_count == 0
